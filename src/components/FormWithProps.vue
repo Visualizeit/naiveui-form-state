@@ -58,7 +58,7 @@ const handleValidateClick = (event: MouseEvent) => {
 
 <template>
   <NCard style="max-width: 420px; margin: auto; margin-top: 2rem">
-    <NForm ref="formRef" :model="formValue" :rules="rules">
+    <NForm :model="formValue" :rules="rules">
       <NFormItem label="姓名" path="user.name">
         <NInput v-model:value="formValue.user.name" placeholder="输入姓名" />
       </NFormItem>
